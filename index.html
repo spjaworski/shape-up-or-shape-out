@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Up or Shape Out</title>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="formContainer">
+    <form class="shapeForm">
+        <p1>Rectangles</p1><br>
+        <label for="rectangleWidth">Width:</label><br>
+        <input type="number" id="recWidth" name="recWidth" min="2" max="6"><br>
+        <label for="rectangleHeight">Height:</label><br>
+        <input type="number" id="recHeight" name="recHeight" min ='1' max="6"><br>
+        <button type="button" class="formButton" id="recBtn">Insert Rectangle</button>
+    </form>
+    <form class="shapeForm">
+        <p1>Squares</p1><br>
+        <label for="squareSideLength">Side Length:</label><br>
+        <input type="number" id="squareLength" name="squareLength" min ='1' max="6"><br>
+        <button type="button" class="formButton" id="squareBtn">Insert Square</button>
+    </form>
+    <form class="shapeForm">
+        <p1>Circles</p1><br>
+        <label for="circRad">Radius:</label><br>
+        <input type="number" id="circRad" name="circRad" min ='1' max="3"><br>
+        <button type="button" class="formButton" id="circBtn">Insert Circle</button>
+    </form>
+    <form class="shapeForm">
+        <p1>Isoceles Right Triangles</p1><br>
+        <label for="triHeight">Height:</label><br>
+        <input type="number" id="triHeight" name="triHeight" min ='1' max="6"><br>
+        <button type="button" class="formButton" id="triBtn">Insert Triangle</button>
+    </form>
+    </div><br>
+    
+    <div id="shapeContainer">
+    <div id="shapeArea" class="shapeBox"></div>
+    
+    <div id="sidePanel" class="shapeBox">
+
+        <label for="shapeName">Shape Name:</label>
+        <p1 id="shapeName">N/A</p1><br>
+        <br>
+        <label for="width">Width:</label>
+        <p1 id="width">N/A</p1><br>
+        <br>
+        <label for="height">Height:</label>
+        <p1 id="height">N/A</p1><br>
+        <br>
+        <label for="radius">Radius:</label>
+        <p1 id="radius">N/A</p1><br>
+        <br>
+        <label for="area">Area:</label>
+        <p1 id="area">N/A</p1><br>
+        <br>
+        <label for="perimeter">Perimeter:</label>
+        <p1 id="perimeter">N/A</p1>
+    </div>
+    
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
